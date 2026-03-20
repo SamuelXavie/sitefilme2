@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineCatálogo - Filmes, Trailers e Informações</title>
+  <meta name="description" content="Catálogo completo de filmes com sinopses, trailers e avaliações">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="logo" onclick="loadHome()">🎬 CineCatálogo</h1>
+        
+        <form class="search-form" onsubmit="handleSearch(event)">
+          <input type="text" id="searchInput" placeholder="🔍 Buscar filmes..." class="search-input">
+        </form>
+
+        <nav class="genres-nav" id="genresNav">
+          <a href="trailers.html" class="nav-link">🎥 Trailers</a>
+          <!-- Gêneros carregados via JS -->
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      </div>
+      
+      <div class="mobile-menu" id="mobileMenu">
+        <div id="mobileGenres"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container" id="mainContent">
+    <!-- Conteúdo carregado via JS -->
+  </main>
+
+  <!-- Modal de Detalhes do Filme -->
+  <div class="modal" id="movieModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>🎬 CineCatálogo © <span id="year"></span> | Dados: <a href="https://www.themoviedb.org/" target="_blank" style="color: var(--primary-color);">TMDB</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
