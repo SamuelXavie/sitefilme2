@@ -1,0 +1,36 @@
+meu-site-filmes/
+├── index.html
+├── style.css
+└── script.js
+
+
+Novidades na atualização v4 1.04
+
+Funcionalidade	Status
+🔐 Login de Usuários	✅ Completo
+📝 Cadastro de Usuários	✅ Completo
+❤️ Sistema de Favoritos	✅ Por usuário
+👤 Perfil do Usuário	✅ Editável
+🔔 Notificações Toast	✅ Completo
+📱 Responsivo	✅ Mobile/Desktop
+🎬 Trailer 16:9	✅ Corrigido
+🎭 Elenco	✅ Scroll horizontal
+
+Instrução de uso 
+🚀 Como Testar
+
+    1-Substitua os 3 arquivos pelos códigos acima
+    2-Abra no navegador
+    3-Crie uma conta (clique em "Entrar" → "Cadastre-se")
+    4-Faça login
+    5-Adicione filmes aos favoritos (clique no ❤️)
+    6-Veja seus favoritos (clique no botão ❤️ no header)
+
+
+## 📁 Dados Salvos no LocalStorage
+
+| Chave | Dados |
+|-------|-------|
+| `user_email@exemplo.com` | Dados do usuário |
+| `currentUser` | Sessão atual |
+| `favorites_email@exemplo.com` | Favoritos do usuário |
